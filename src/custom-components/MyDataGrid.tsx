@@ -1,22 +1,19 @@
 import { memo, useCallback, useState } from 'react';
 import { TablePaginationProps } from '@mui/material/TablePagination';
-import clsx from 'clsx';
+
 import {
   DataGrid,
   DataGridProps,
-  GridToolbarColumnsButton,
-  GridToolbarQuickFilter,
+
   GridToolbarProps,
   gridPageCountSelector,
   GridPagination,
   useGridSelector,
   useGridApiContext,
   Toolbar,
-  ColumnsPanelTrigger,
+ 
   ToolbarButton,
-  FilterPanelTrigger,
-  ExportCsv,
-  ExportPrint,
+
   QuickFilter,
   QuickFilterTrigger,
   QuickFilterControl,
@@ -24,7 +21,7 @@ import {
 } from '@mui/x-data-grid';
 import { defaultPageSize, density, pageSizes } from '../common/Configuration';
 //import {} from '@mui/material';
-import MyGrid from './MyGrid';
+
 import MyAddIcon from './MyAddIcon';
 import MyClearIcon from './MyClearIcon';
 import MyButton from './MyButton';
@@ -33,26 +30,12 @@ import eq from 'lodash/eq';
 import MyMuiPagination from './MyMuiPagination';
 import MyMenu from './MyMenu';
 import MyMenuItem from './MyMenuItem';
-import MyBox from './MyBox';
-import { emphasize } from '@mui/material/styles';
 import DataGridColumnsPanelStyles from './DataGridColumnsPanelStyles';
 import DataGridQuickFilterStyles from './DataGridQuickFilterStyles';
-import { Button, InputAdornment, ScopedCssBaseline, TextField, Tooltip } from '@mui/material';
+import { InputAdornment, ScopedCssBaseline, TextField, Tooltip } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import CancelIcon from '@mui/icons-material/Cancel';
-import ViewColumnIcon from '@mui/icons-material/ViewColumn';
-import MyViewColumnIcon from './MyViewColumnIcon';
-function TextInput(props: React.InputHTMLAttributes<HTMLInputElement>) {
-  return (
-    <input
-      {...props}
-      className={clsx(
-        'h-9 w-full rounded border border-neutral-200 dark:border-neutral-700 dark:bg-neutral-900 px-2.5 text-base text-neutral-900 dark:text-neutral-200 focus:outline focus:outline-2 focus:-outline-offset-2 focus:outline-blue-600',
-        props.className,
-      )}
-    />
-  );
-}
+
 interface MyDataGridProps extends DataGridProps {
   rowCount?: number;
   handleContextMenu?(e: React.MouseEvent): void;
@@ -216,8 +199,8 @@ const StyledTextField = styled(TextField)<{
 const CustomToolbar = memo(
   function ({ showAddButton = false, showAddDropdownButton = false, showDeleteButton = false, ...props }: MyToolbarProps) {
     console.log('CustomToolbar rendered');
-    const theme = useTheme();
-    const baseColor = theme.palette.mode === 'light' ? '#2a5298' : theme.palette.primary.light;
+    //const theme = useTheme();
+   // const baseColor = theme.palette.mode === 'light' ? '#2a5298' : theme.palette.primary.light;
    
 
     return (

@@ -2,8 +2,8 @@ import ArrowDropDownIcon from '@mui/icons-material/ArrowDropDown';
 import eq from 'lodash/eq';
 import { SvgIconProps } from '@mui/material/SvgIcon';
 import { memo } from 'react';
-interface MyArrowDropDownIcon extends SvgIconProps {}
-const MyArrowDropDownIcon = ({ ...props }: MyArrowDropDownIcon) => {
+interface MyArrowDropDownIconProps extends SvgIconProps {}
+const MyArrowDropDownIcon = ({ ...props }: MyArrowDropDownIconProps) => {
   console.log('MyArrowDropDownIcon render');
   return <ArrowDropDownIcon {...props}></ArrowDropDownIcon>;
 };

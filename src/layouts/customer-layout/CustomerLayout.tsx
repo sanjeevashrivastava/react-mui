@@ -1,8 +1,7 @@
 import React, {memo} from "react";
-import { Link, Outlet } from "react-router-dom";
+import { Outlet } from "react-router-dom";
 import _ from 'lodash'
-import Container from '@mui/material/Container';
-import CssBaseline from '@mui/material/CssBaseline';
+
 import { forwardRef, useCallback, useState  } from 'react';
 import { useNavigate } from 'react-router-dom';
 //import { useRouter } from 'next/navigation';
@@ -21,10 +20,7 @@ import MyBox from '../../custom-components/MyBox';
 import MyToolbar from '../../custom-components/MyToolbar';
 import MyIconButton from '../../custom-components/MyIconButton';
 import MyMenuIcon from '../../custom-components/MyMenuIcon';
-import MyTextField from '../../custom-components/MyTextField';
-import MyInputAdornment from '../../custom-components/MyInputAdornment';
-import MyIconSearch from '../../custom-components/MyIconSearch';
-import MyIconAdjustmentsHorizontal from '../../custom-components/MyIconAdjustmentsHorizontal';
+
 import MyPerfectScrollbar from '../../custom-components/MyPerfectScrollbar ';
 import MyDrawer from '../../custom-components/MyDrawer';
 import MyCard from '../../custom-components/MyCard';
@@ -51,21 +47,9 @@ import { useFirstRender } from '../../hooks/useFirstRender';
 //import AuthGuard from '.../../auth-guard';
 //import { useDispatch } from '.../../store';
 //import { setToken } from '.../../store/slices/globalState';
-import MyFactoryIcon from '../../custom-components/MyFactoryIcon';
-import MyCurrencyExcangeIcon from '../../custom-components/MyCurrencyExcangeIcon';
-import MyAdsClickIcon from '../../custom-components/MyAdsClickIcon';
-import MySwitchAccountIcon from '../../custom-components/MySwitchAccountIcon';
-import MyApiIcon from '../../custom-components/MyApiIcon';
-import MyFormatAlignJustifyIcon from '../../custom-components/MyFormatAlignJustifyIcon';
-import MyControlCameraIcon from '../../custom-components/MyControlCameraIcon';
-import MyCategoryIcon from '../../custom-components/MyCategoryIcon';
-import MyFlagIcon from '../../custom-components/MyFlagIcon';
-import MyCorporateFareIcon from '../../custom-components/MyCorporateFareIcon';
-import MyInventoryIcon from '../../custom-components/MyInventoryIcon';
-import MyBusinessIcon from '../../custom-components/MyBusinessIcon';
+
 import MyPersonOutlineIcon from '../../custom-components/MyFlagIcon';
-import MyCropPortraitIcon from '../../custom-components/MyCropPortraitIcon';
-import MyClearHandsIcon from '../../custom-components/MyClearHandsIcon';
+
 import MyWhatsAppIcon from '../../custom-components/MyWhatsAppIcon';
 
   declare module 'react' {
