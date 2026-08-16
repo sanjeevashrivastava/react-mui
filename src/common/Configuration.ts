@@ -9,5 +9,5 @@ export type ContextMenuType = {
   mouseY: number;
 };
 
-export const regExEMail = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
+export const regExEMail = /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/;
 export const arrUserStatus: string[] = [' ', 'Registered', 'Active', 'Inactive', 'Locked', 'Suspended'];

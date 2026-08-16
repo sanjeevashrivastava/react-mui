@@ -100,6 +100,7 @@ const useUserList = () => {
       isLoading: false,
       arrSelectedId: [] as GridRowId[],
     } as StateType);
+    setRowSelectionModel({ type: "include", ids: new Set() });
   }, [
     state.filter_text,
     state.sort_field,
@@ -259,7 +260,6 @@ const useUserList = () => {
     [
       rowSelectionModel.ids,
       getData,
-      state.arrSelectedId,
       toggleDialog,
     ],
   );
