@@ -223,15 +223,6 @@ const useUserList = () => {
     ],
   );
 
-  const onCheckChange = useCallback(
-    async (
-      model: GridRowSelectionModel,
-      //details: GridCallbackDetails<any>
-    ): Promise<void> => {
-      setState({ arrSelectedId: [...model.ids] as string[] } as StateType);
-    },
-    [],
-  );
 
   const onAddClick = useCallback(
     async (event: React.MouseEvent<HTMLElement>): Promise<void> => {
@@ -266,7 +257,7 @@ const useUserList = () => {
       }
     },
     [
-      //deleteUser,
+      rowSelectionModel.ids,
       getData,
       state.arrSelectedId,
       toggleDialog,
@@ -302,7 +293,7 @@ const useUserList = () => {
     apiRef,
     paginationModel,
     setPaginationModel,
-    onCheckChange,
+  
     onDeleteClick,
     onEditClick,
     onAddClick,

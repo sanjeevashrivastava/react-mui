@@ -19,7 +19,7 @@ const ClientUserList = () => {
     apiRef,
     paginationModel,
     setPaginationModel,
-    onCheckChange,
+   
     onDeleteClick,
     onEditClick,
     onAddClick,

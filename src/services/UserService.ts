@@ -43,4 +43,5 @@ class UserService {
     return (await http.get("/user/userNameExists?id=" + id + "&user_name=" + user_name)).data;
   }
 }
-export default new UserService();
+const userServiceObject = new UserService()
+export default userServiceObject;

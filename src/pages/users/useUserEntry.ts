@@ -313,7 +313,6 @@ const useUserEntry = () => {
     setState({ errorMessages: errorMessages } as StateType);
     return isFormValid;
   }, [
-    ERROR_MESSAGES,
     validateFirstName,
     validateLastName,
     validateEMailId,
@@ -372,7 +371,7 @@ const useUserEntry = () => {
         setState({ saveDisabled: false } as StateType);
       }
     },
-    [validateForm, , state.dtoUser, navigate],
+    [validateForm, id , state.dtoUser, navigate],
   );
 
   const onCancelClick = useCallback(
