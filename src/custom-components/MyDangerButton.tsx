@@ -9,7 +9,9 @@ const MyDangerButton = ({ ...props }: MyDangerProps) => {
   return (
     <Button
       variant="contained"
-      sx={{ background: theme.palette.error.main, '&:hover': { background: theme.palette.error.dark } }}
+      sx={{ textTransform: 'none',borderRadius: 4,  px: 2,
+        py: 0.7,
+        letterSpacing: 0.3,minWidth: 90, background: theme.palette.error.main, '&:hover': { background: theme.palette.error.dark } }}
       {...props}
     />
   );

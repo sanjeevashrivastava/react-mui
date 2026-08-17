@@ -13,6 +13,8 @@ import eq from 'lodash/eq';
 import MyCard from './MyCard';
 import MyIconButton from './MyIconButton';
 import MyCloseIcon from './MyCloseIcon';
+import MyNotInterestedIcon from './MyNotInterestedIcon';
+import MyCheckIcon from './MyCheckIcon';
 
 interface MyConfirmDialogProps {
   title: string;
@@ -26,19 +28,23 @@ const MyConfirmDialog = ({ children, ...props }: ModalProps & MyConfirmDialogPro
   return (
     <Modal
       open
-      disablePortal
+      //disablePortal
       disableEnforceFocus
       disableAutoFocus
+      disableScrollLock
       aria-labelledby="server-modal-title"
       aria-describedby="server-modal-description"
       sx={{
         display: 'flex',
-        //p: 1,
+        position: 'absolute',
+        p: 1,
         alignItems: 'center',
         justifyContent: 'center',
+        //verticalAlign: 'top',
         zIndex: 9999
       }}
       container={() => rootRef.current}
+
     >
       <MyCard
         sx={{
@@ -57,10 +63,10 @@ const MyConfirmDialog = ({ children, ...props }: ModalProps & MyConfirmDialogPro
         <CardActions>
           <MyGrid container //display="flex" justifyContent="flex-end"
           >
-            <MyButton onClick={props.onNoClick} style={{ marginRight: '20px' }}>
+            <MyButton startIcon={<MyNotInterestedIcon/>} onClick={props.onNoClick} style={{ marginRight: '20px' }}>
               No
             </MyButton>
-            <MyDangerButton onClick={props.onYesClick}>Yes</MyDangerButton>
+            <MyDangerButton startIcon={<MyCheckIcon/>} onClick={props.onYesClick}>Yes</MyDangerButton>
           </MyGrid>
         </CardActions>
       </MyCard>

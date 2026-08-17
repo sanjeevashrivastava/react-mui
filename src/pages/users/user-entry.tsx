@@ -14,8 +14,8 @@ import MyGrid from "../../custom-components/MyGrid";
 import MyCard from "../../custom-components/MyCard";
 import MyPhoneNumber from "../../custom-components/MyPhoneNumber";
 import SaveIcon from "@mui/icons-material/Save";
-import ArrowBackIcon from "@mui/icons-material/ArrowBack";
 import MyErrorMessage from "../../custom-components/MyErrorMessage";
+import MyArrowBackIcon from "../../custom-components/MyArrowBackIcon";
 
 const UserEntry = () => {
   const {
@@ -167,7 +167,7 @@ const UserEntry = () => {
         >
           Save
         </MyButton>
-        <MyButton startIcon={<ArrowBackIcon />} onClick={onCancelClick}>
+        <MyButton startIcon={<MyArrowBackIcon />} onClick={onCancelClick}>
           Cancel
         </MyButton>
       </MyCardActions>

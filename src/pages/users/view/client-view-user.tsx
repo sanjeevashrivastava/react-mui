@@ -9,6 +9,8 @@ import MyCardContent from '../../../custom-components/MyCardContent';
 import MyDivider from '../../../custom-components/MyDivider';
 import MyCardActions from '../../../custom-components/MyCardActions';
 import MyGrid from '../../../custom-components/MyGrid';
+import MyArrowBackIcon from '../../../custom-components/MyArrowBackIcon';
+import MyEditIcon from '../../../custom-components/MyEditIcon';
 
 const ClientViewUser = () => {
   const { state, onEditClick, onCancelClick } = useViewUser();
@@ -51,8 +53,8 @@ const ClientViewUser = () => {
         </MyCardContent>
         <MyDivider />
         <MyCardActions>
-          <MyButton onClick={onEditClick}>Edit</MyButton>
-          <MyButton onClick={onCancelClick}>Cancel</MyButton>
+          <MyButton  startIcon={<MyEditIcon />} onClick={onEditClick}>Edit</MyButton>
+          <MyButton startIcon={<MyArrowBackIcon />} onClick={onCancelClick}>Cancel</MyButton>
         </MyCardActions>
       </MyCard>
     </>

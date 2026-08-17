@@ -35,6 +35,7 @@ import DataGridQuickFilterStyles from './DataGridQuickFilterStyles';
 import { InputAdornment, ScopedCssBaseline, TextField, Tooltip } from '@mui/material';
 import SearchIcon from '@mui/icons-material/Search';
 import CancelIcon from '@mui/icons-material/Cancel';
+import MyDangerButton from './MyDangerButton';
 
 interface MyDataGridProps extends DataGridProps {
   rowCount?: number;
@@ -135,9 +136,9 @@ const GridToolbarDeleteButton = memo(
   function (props: any) {
     console.log('GridToolbarDeleteButton rendered');
     return (
-      <MyButton variant="text" startIcon={<MyClearIcon />} title="Delete" color="error" onClick={props.onDeleteClick}>
+      <MyDangerButton startIcon={<MyClearIcon />} title="Delete" color="error" onClick={props.onDeleteClick}>
         Delete
-      </MyButton>
+      </MyDangerButton>
     );
   },
   (prevProps, nextProps) => {
