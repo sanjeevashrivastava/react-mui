@@ -499,18 +499,18 @@ const CustomerLayout = (//{ children: any }
       </MyBox>
 
       <MyBox sx={{ display: 'flex', backgroundColor: '#f9fafb', borderRadius: 8 }}>
-        <MyBox component="nav" sx={{ background: 'linear-gradient(135deg, #1f3b73, #233e8b, #f2c94c)', width: firstRender ? 300 : open && matchUpMd ? 300 : 0 }}>
+        <MyBox component="nav" sx={{ background: 'linear-gradient(135deg, #1f3b73, #233e8b, #f2c94c)', width: firstRender ? 250 : open && matchUpMd ? 250 : 0 }}>
           <MyDrawer
             variant={firstRender ? 'persistent' : matchUpMd ? 'persistent' : 'temporary'}
             open={open}
             onClose={toggleDrawer()}
             sx={{
-              width: 300,
+              width: 250,
               //position: 'relative', //imp
               '& .MuiDrawer-paper': {
                 mt: firstRender ? 11 : open && matchUpMd ? 11 : 0,
                 zIndex: 1099,
-                //width: firstRender? 300: ( open && matchUpMd? 300: 0),
+                //width: firstRender? 250: ( open && matchUpMd? 250: 0),
                 background: 'linear-gradient(135deg, #1f3b73, #233e8b, #f2c94c)',
                 color: theme.palette.text.primary,
                 borderRight: 'none'
@@ -522,7 +522,7 @@ const CustomerLayout = (//{ children: any }
               component="div"
               style={{
                 overflowY: 'hidden',
-                width: 300,
+                width: 250,
                 height: 'calc(100vh - ' + (matchUpMd ? 89 : 20) + 'px)',
                 maxHeight: 'calc(100vh - ' + (matchUpMd ? 89 : 20) + 'px)',
                 //position: "fixed",
@@ -539,7 +539,7 @@ const CustomerLayout = (//{ children: any }
                   collapseIcon: MyArrowDropDownIcon,
                   endIcon: EndIcon
                 }}
-                sx={{ flexGrow: 1, maxWidth: 300 }}
+                sx={{ flexGrow: 1, maxWidth: 250 }}
               >
                 <CustomTreeItem itemId="3000" label="Core" labelIcon={MyPersonOutlineIcon}>
                   <CustomTreeItem
@@ -579,7 +579,7 @@ const CustomerLayout = (//{ children: any }
             backgroundColor: '#fff  !important',
             position: 'relative',
             left: 0,
-            width: 'calc(100vw - ' + (firstRender ? 300 : matchUpMd ? 300 : 0) + 'px'            
+            width: 'calc(100vw - ' + (firstRender ? 250 : matchUpMd ? 250 : 0) + 'px'            
           }}
         >
           <MyBox
