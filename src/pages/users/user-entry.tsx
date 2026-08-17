@@ -13,9 +13,9 @@ import MyDivider from "../../custom-components/MyDivider";
 import MyGrid from "../../custom-components/MyGrid";
 import MyCard from "../../custom-components/MyCard";
 import MyPhoneNumber from "../../custom-components/MyPhoneNumber";
-import SaveIcon from "@mui/icons-material/Save";
 import MyErrorMessage from "../../custom-components/MyErrorMessage";
 import MyArrowBackIcon from "../../custom-components/MyArrowBackIcon";
+import MySaveIcon from "../../custom-components/MySaveIcon";
 
 const UserEntry = () => {
   const {
@@ -161,7 +161,7 @@ const UserEntry = () => {
       <MyDivider></MyDivider>
       <MyCardActions>
         <MyButton
-          startIcon={<SaveIcon />}
+          startIcon={<MySaveIcon />}
           onClick={onSaveClick}
           disabled={state.saveDisabled}
         >
