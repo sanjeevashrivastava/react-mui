@@ -109,10 +109,12 @@ const useUserEntry = () => {
   }, [state.dtoUser.id, state.dtoUser.mobile_no]);
 
   useEffect(() => {
-    if (id?.trim() !== "") {
+    //alert(id)
+    if (id && id.trim() !== "") {
       getData();
     }
-  }, [id, getData]);
+  }, [//id, 
+    getData]);
 
   const onInputChange = useCallback(
     async (event: ChangeEvent<HTMLInputElement>) => {

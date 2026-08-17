@@ -26,3 +26,19 @@ code {
   position: relative;  
   top: -20px; 
 }
+
+.user-status-registered {
+  color: #00f;  
+ }
+.user-status-active {
+  color: #4CAF50 !important;  
+ }
+ .user-status-inactive {
+  color: #9E9E9E !important;  
+ }
+ .user-status-locked {
+  color: #F44336 !important;  
+ }
+ .user-status-suspended {
+  color: #FF9800 !important;  
+ }

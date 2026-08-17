@@ -175,7 +175,6 @@ const ClientUserList = () => {
           onClose={toggleDialog}
         >
           <MyTypography variant="body1">
-            {" "}
             Are you sure you want to delete this item? This cannot be undone.
           </MyTypography>
         </MyConfirmDialog>

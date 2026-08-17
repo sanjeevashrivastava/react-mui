@@ -8,7 +8,7 @@ interface MyBoxProps extends BoxProps {
 const MyBox = forwardRef(({ children, ...props }: MyBoxProps, ref: ForwardedRef<unknown>) => {
   console.log('MyBox rendered');
   return (
-    <Box ref={ref} {...props}>
+    <Box ref={ref} {...props} >
       {children}
     </Box>
   );

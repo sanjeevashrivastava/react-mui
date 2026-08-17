@@ -33,7 +33,7 @@ const MyConfirmDialog = ({ children, ...props }: ModalProps & MyConfirmDialogPro
       aria-describedby="server-modal-description"
       sx={{
         display: 'flex',
-        p: 1,
+        //p: 1,
         alignItems: 'center',
         justifyContent: 'center',
         zIndex: 9999
