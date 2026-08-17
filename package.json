@@ -2,7 +2,6 @@
   "name": "react-mui",
   "version": "1.0.0",
   "description": "Application example built with React and adding the Material UI CSS framework using the @mui/material library.",
-  "homepage": ".",
   "license": "MIT",
   "private": true,
   "scripts": {
